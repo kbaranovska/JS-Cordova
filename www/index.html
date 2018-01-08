@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div>
+        <span>Input expression:</span>
+        </br>
+        <input id="expression" type="text">
+    </div>
+    <div>
+        <button onclick="Calculate()">Calculate</button>
+    </div>
+
+    <div>
+        </br>
+        <span>Result of calculation:</span>
+        <div id="result"></div>
+    </div>
+
+    <span>SMS plugin</span>
+    <input id="numberTxt" placeholder="Enter mobile number" value="" type="tel" />
+    <textarea id="messageTxt" placeholder="Enter message"></textarea>
+    <input type="button" onclick="app.sendSms()" value="Send SMS" />
+
+
+    <script src="js/calculator.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/sms.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html>

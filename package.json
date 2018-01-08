@@ -1,0 +1,27 @@
+{
+    "name": "calculator",
+    "displayName": "calculator",
+    "version": "1.0.0",
+    "description": "A sample Apache Cordova application that responds to the deviceready event.",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "Apache-2.0",
+    "dependencies": {
+        "cordova-android": "^7.0.0",
+        "cordova-ios": "^4.5.4",
+        "cordova-sms-plugin": "git+https://github.com/cordova-sms/cordova-sms-plugin.git"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-sms-plugin": {}
+        },
+        "platforms": [
+            "android",
+            "ios"
+        ]
+    }
+}
